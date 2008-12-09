@@ -26,3 +26,5 @@ end
 The table blog must exist in your default database and table posts should exist in database "db2"
 
 Now you can do this -> # Blog.first.posts
+
+Currently it does not work with migrations, it assumed table 2..n are managed outside of rails.  If you have a patch for this, let me know. :)
