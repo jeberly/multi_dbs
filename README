@@ -2,7 +2,7 @@
 
 by John Eberly
 
-Use this plugin to have access to multiple databases in rails.
+Use this plugin to have access to multiple databases in rails.  I have not used this in a production environment yet.  If you use this plugin, please drop me a note letting me know of your impressions, problems, etc.
 
 = Installation
 
