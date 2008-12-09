@@ -1,0 +1,28 @@
+= Multi-Database plugin for rails
+
+by John Eberly
+
+Use this plugin to give access to multiple databases in rails.  
+
+= Installation
+
+script/plugin install git://github.com/jeberly/multi_dbs.git
+
+= Example Use
+
+Here is a real life usage of the plugin for specifying a separate database for each model.
+
+= Set database name for any model that does not use default specified in database.yml file
+
+class Blog < ActiveRecord::Base
+  has_many :posts
+end
+
+class Post < ActiveRecord::Base
+  set_database_name "db2"
+  belongs_to :blog
+end
+
+The table blog must exist in your default database and table posts should exist in database "db2"
+
+Now you can do this -> # Blog.first.posts
